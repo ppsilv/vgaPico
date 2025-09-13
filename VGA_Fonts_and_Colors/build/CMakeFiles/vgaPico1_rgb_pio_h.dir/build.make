@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors
+CMAKE_SOURCE_DIR = /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build
+CMAKE_BINARY_DIR = /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build
 
 # Utility rule file for vgaPico1_rgb_pio_h.
 
@@ -68,9 +68,9 @@ include CMakeFiles/vgaPico1_rgb_pio_h.dir/progress.make
 
 CMakeFiles/vgaPico1_rgb_pio_h: rgb.pio.h
 
-rgb.pio.h: /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/rgb.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating rgb.pio.h"
-	/home/pdsilva/.pico-sdk/tools/2.2.0/pioasm/pioasm -o c-sdk -v 0 /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/rgb.pio /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/rgb.pio.h
+rgb.pio.h: /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/rgb.pio
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating rgb.pio.h"
+	/home/pdsilva/.pico-sdk/tools/2.2.0/pioasm/pioasm -o c-sdk -v 0 /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/rgb.pio /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/rgb.pio.h
 
 vgaPico1_rgb_pio_h: CMakeFiles/vgaPico1_rgb_pio_h
 vgaPico1_rgb_pio_h: rgb.pio.h
@@ -86,6 +86,6 @@ CMakeFiles/vgaPico1_rgb_pio_h.dir/clean:
 .PHONY : CMakeFiles/vgaPico1_rgb_pio_h.dir/clean
 
 CMakeFiles/vgaPico1_rgb_pio_h.dir/depend:
-	cd /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/CMakeFiles/vgaPico1_rgb_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/CMakeFiles/vgaPico1_rgb_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/vgaPico1_rgb_pio_h.dir/depend
 

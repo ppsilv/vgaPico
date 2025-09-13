@@ -22,9 +22,9 @@ CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mul
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/include/pico/lock_core.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico/types.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/generated/pico_base/pico/version.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/generated/pico_base/pico/version.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico/config.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/generated/pico_base/pico/config_autogen.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/generated/pico_base/pico/config_autogen.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/boards/include/boards/pico.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/include/pico/platform.h \

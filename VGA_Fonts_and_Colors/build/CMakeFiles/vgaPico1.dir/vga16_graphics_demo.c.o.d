@@ -1,6 +1,6 @@
 CMakeFiles/vgaPico1.dir/vga16_graphics_demo.c.o: \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/vga16_graphics_demo.c \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/vga16_graphics_v2.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/vga16_graphics_demo.c \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/vga16_graphics_v2.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdio.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_ansi.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/newlib.h \
@@ -31,9 +31,9 @@ CMakeFiles/vgaPico1.dir/vga16_graphics_demo.c.o: \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdint.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_intsup.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_stdint.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/generated/pico_base/pico/version.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/generated/pico_base/pico/version.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico/config.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/generated/pico_base/pico/config_autogen.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/generated/pico_base/pico/config_autogen.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/boards/include/boards/pico.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/include/pico/platform.h \
@@ -99,4 +99,4 @@ CMakeFiles/vgaPico1.dir/vga16_graphics_demo.c.o: \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_locale.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/strings.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/string.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/pt_cornell_rp2040_v1_4.h
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/pt_cornell_rp2040_v1_4.h

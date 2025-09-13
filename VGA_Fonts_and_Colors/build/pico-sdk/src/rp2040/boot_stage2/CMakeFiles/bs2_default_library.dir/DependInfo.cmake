@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S" "/home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o"
+  "/home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S" "/home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 

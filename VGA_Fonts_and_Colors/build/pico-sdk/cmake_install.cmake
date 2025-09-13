@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/pico-sdk/tools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/pico-sdk/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/pico-sdk/docs/cmake_install.cmake")
 endif()
 

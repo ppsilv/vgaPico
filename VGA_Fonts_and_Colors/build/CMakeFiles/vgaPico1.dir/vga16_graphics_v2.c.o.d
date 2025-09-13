@@ -1,5 +1,5 @@
 CMakeFiles/vgaPico1.dir/vga16_graphics_v2.c.o: \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/vga16_graphics_v2.c \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/vga16_graphics_v2.c \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdio.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_ansi.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/newlib.h \
@@ -30,9 +30,9 @@ CMakeFiles/vgaPico1.dir/vga16_graphics_v2.c.o: \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdint.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_intsup.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_stdint.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/generated/pico_base/pico/version.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/generated/pico_base/pico/version.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico/config.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/generated/pico_base/pico/config_autogen.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/generated/pico_base/pico/config_autogen.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/boards/include/boards/pico.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/include/pico/platform.h \
@@ -80,12 +80,12 @@ CMakeFiles/vgaPico1.dir/vga16_graphics_v2.c.o: \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/hardware_structs/include/hardware/structs/dma_debug.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/hsync.pio.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/vsync.pio.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/build/rgb.pio.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/vga16_graphics_v2.h \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/glcdfont.c \
- /home/pdsilva/project/pico_vga/pico_vga_09-2025/VGA_Graphics/VGA_Fonts_and_Colors/font_rom_brl4.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/hsync.pio.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/vsync.pio.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/rgb.pio.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/vga16_graphics_v2.h \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/glcdfont.c \
+ /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/font_rom_brl4.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/string.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_locale.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/strings.h \
