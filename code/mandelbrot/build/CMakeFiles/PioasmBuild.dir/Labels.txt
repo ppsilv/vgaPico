@@ -1,0 +1,13 @@
+# Target labels
+ PioasmBuild
+# Source files and their labels
+C:/Users/vha3/Pico/mandelbrot/build/CMakeFiles/PioasmBuild
+C:/Users/vha3/Pico/mandelbrot/build/CMakeFiles/PioasmBuild.rule
+C:/Users/vha3/Pico/mandelbrot/build/CMakeFiles/PioasmBuild-complete.rule
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule

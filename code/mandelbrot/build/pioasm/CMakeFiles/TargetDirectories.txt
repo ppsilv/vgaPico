@@ -1,0 +1,3 @@
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/CMakeFiles/pioasm.dir
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/CMakeFiles/edit_cache.dir
+C:/Users/vha3/Pico/mandelbrot/build/pioasm/CMakeFiles/rebuild_cache.dir
