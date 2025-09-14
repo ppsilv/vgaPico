@@ -20,8 +20,6 @@ CMakeFiles/vgaPico2.dir/vga16_text_demo.c.o: \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdlib.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/stdlib.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/alloca.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_drv.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_text.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico/types.h \
@@ -77,13 +75,6 @@ CMakeFiles/vgaPico2.dir/vga16_text_demo.c.o: \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_resets/include/hardware/resets.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/resets.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/resets.h \
- /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/include/hardware/pio.h \
- /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/pio.h \
- /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/pio.h \
- /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
- /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/include/hardware/vreg.h \
- /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/powman.h \
- /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/powman.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/clocks.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/clocks.h \
@@ -91,4 +82,7 @@ CMakeFiles/vgaPico2.dir/vga16_text_demo.c.o: \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_locale.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/strings.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/string.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/pt_cornell_rp2040_v1_4.h
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_drv.h \
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_text.h \
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/pt_cornell_rp2040_v1_4.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/ctype.h
