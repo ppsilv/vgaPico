@@ -28,7 +28,7 @@ set(PICO_BOARD pico CACHE STRING "Board type")
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
-project(vgaPico1 C CXX ASM)
+project(vgaPico2 C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
@@ -36,29 +36,29 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(vgaPico1 vga16_graphics_demo.c vga16_graphics_v2.c)
+add_executable(vgaPico2 vga16_graphics_demo.c vga16_graphics_v2.c)
 
-pico_generate_pio_header(vgaPico1 ${CMAKE_CURRENT_SOURCE_DIR}/hsync.pio)
-pico_generate_pio_header(vgaPico1 ${CMAKE_CURRENT_SOURCE_DIR}/vsync.pio)
-pico_generate_pio_header(vgaPico1 ${CMAKE_CURRENT_SOURCE_DIR}/rgb.pio)
+pico_generate_pio_header(vgaPico2 ${CMAKE_CURRENT_SOURCE_DIR}/hsync.pio)
+pico_generate_pio_header(vgaPico2 ${CMAKE_CURRENT_SOURCE_DIR}/vsync.pio)
+pico_generate_pio_header(vgaPico2 ${CMAKE_CURRENT_SOURCE_DIR}/rgb.pio)
 
 
-pico_set_program_name(vgaPico1 "vgaPico1")
-pico_set_program_version(vgaPico1 "0.1")
+pico_set_program_name(vgaPico2 "vgaPico2")
+pico_set_program_version(vgaPico2 "0.1")
 
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(vgaPico1 0)
-pico_enable_stdio_usb(vgaPico1 0)
+pico_enable_stdio_uart(vgaPico2 0)
+pico_enable_stdio_usb(vgaPico2 0)
 
 # Add the standard library to the build
-target_link_libraries(vgaPico1
+target_link_libraries(vgaPico2
         pico_stdlib)
 
 # Add the standard include files to the build
-target_include_directories(vgaPico1 PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(vgaPico2 PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 
-target_link_libraries(vgaPico1
+target_link_libraries(vgaPico2
     pico_stdlib
     hardware_pio
     hardware_dma
@@ -66,5 +66,5 @@ target_link_libraries(vgaPico1
     hardware_irq
     pico_multicore
 )
-pico_add_extra_outputs(vgaPico1)
+pico_add_extra_outputs(vgaPico2)
 
