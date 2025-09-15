@@ -14,7 +14,7 @@
 
 #define hsync_wrap_target 1
 #define hsync_wrap 8
-#define hsync_pio_version 0
+#define hsync_pio_version 1
 
 static const uint16_t hsync_program_instructions[] = {
     0x80a0, //  0: pull   block

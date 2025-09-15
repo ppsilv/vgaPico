@@ -85,8 +85,10 @@ CMakeFiles/vgaPico2.dir/vga16_text.c.o: \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/dma_debug.h \
  /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_text.h \
  /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_drv.h \
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/cursor.h \
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/colors.h \
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/font.h \
  /home/pdsilva/project/vgaPico/vgaPico2/libvga/glcdfont.c \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/font_rom_brl4.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/string.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_locale.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/strings.h \

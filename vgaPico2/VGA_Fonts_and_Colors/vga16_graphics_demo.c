@@ -436,6 +436,61 @@ static PT_THREAD (protothread_toggle25(struct pt *pt))
   PT_END(pt);
 } // blink thread
 
+    int cursorx=0;
+    int cursory=0;
+unsigned short get_cursor_y();
+unsigned short get_textsize();
+unsigned short get_cursor_x();
+
+
+static void pwriteStr(char *str) {
+   // setCursor(cursorx, cursory);
+   
+
+
+    while(*str) {
+        putchar(*str++);
+   //     cursorx += 6; 
+   //     if (cursorx > 639) { 
+   //         cursorx = 0;
+   //         cursory += 8;
+   //         if (cursory > 479) cursory = 0;   
+   //     }  
+    } 
+}
+static PT_THREAD (protothread_write_screen(struct pt *pt))
+{
+    PT_BEGIN(pt);
+    static bool LED_state = false ;
+    char b[256];    // data structure for interval timer
+     PT_INTERVAL_INIT() ;
+
+
+    // Write some text
+    setTextColor(WHITE) ;
+    setTextSize(1) ;
+    
+   // writeString("Teste de escrita na tela") ;
+
+      while(1) {
+        // yield time 0.001 second
+        //PT_YIELD_usec(1000) ;
+        PT_YIELD_INTERVAL(100000) ;
+        writeString("P") ;
+
+        cursorx = get_cursor_x();
+        cursory = get_cursor_y();
+
+        setCursor( 10 , 28);
+        sprintf(b, "X=%03d                       Y=%03d ", cursorx, cursory);
+        writeString(b);
+
+        setCursor( cursorx , cursory);
+
+
+      } // END WHILE(1)
+  PT_END(pt);
+} // blink thread
 
 // ==================================================
 // === user's serial input thread on core 1
@@ -499,6 +554,7 @@ int main(){
 
   // start the serial i/o
   stdio_init_all() ;
+  
   // announce the threader version on system reset
   printf("\n\rProtothreads RP2040/2350 v1.4 \n\r");
 
@@ -512,6 +568,7 @@ int main(){
 
   // === config threads ========================
   // for core 0
+
   pt_add_thread(protothread_graphics);
   pt_add_thread(protothread_toggle25);
   //
@@ -520,3 +577,5 @@ int main(){
   // NEVER exits
   // ===========================================
 } // end main
+
+

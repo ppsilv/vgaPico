@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors
+CMAKE_SOURCE_DIR = /home/pdsilva/project/vgaPico/vgaPico2/VGA_Fonts_and_Colors
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build
+CMAKE_BINARY_DIR = /home/pdsilva/project/vgaPico/vgaPico2/VGA_Fonts_and_Colors/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/CMakeFiles /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pdsilva/project/vgaPico/vgaPico2/VGA_Fonts_and_Colors/build/CMakeFiles /home/pdsilva/project/vgaPico/vgaPico2/VGA_Fonts_and_Colors/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pdsilva/project/vgaPico/vgaPico2/VGA_Fonts_and_Colors/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,56 +117,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named vgaPico1
+# Target rules for targets named vgaPico2
 
 # Build rule for target.
-vgaPico1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vgaPico1
-.PHONY : vgaPico1
+vgaPico2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vgaPico2
+.PHONY : vgaPico2
 
 # fast build rule for target.
-vgaPico1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/build
-.PHONY : vgaPico1/fast
+vgaPico2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/build
+.PHONY : vgaPico2/fast
 
 #=============================================================================
-# Target rules for targets named vgaPico1_hsync_pio_h
+# Target rules for targets named vgaPico2_hsync_pio_h
 
 # Build rule for target.
-vgaPico1_hsync_pio_h: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vgaPico1_hsync_pio_h
-.PHONY : vgaPico1_hsync_pio_h
+vgaPico2_hsync_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vgaPico2_hsync_pio_h
+.PHONY : vgaPico2_hsync_pio_h
 
 # fast build rule for target.
-vgaPico1_hsync_pio_h/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1_hsync_pio_h.dir/build.make CMakeFiles/vgaPico1_hsync_pio_h.dir/build
-.PHONY : vgaPico1_hsync_pio_h/fast
+vgaPico2_hsync_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2_hsync_pio_h.dir/build.make CMakeFiles/vgaPico2_hsync_pio_h.dir/build
+.PHONY : vgaPico2_hsync_pio_h/fast
 
 #=============================================================================
-# Target rules for targets named vgaPico1_vsync_pio_h
+# Target rules for targets named vgaPico2_vsync_pio_h
 
 # Build rule for target.
-vgaPico1_vsync_pio_h: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vgaPico1_vsync_pio_h
-.PHONY : vgaPico1_vsync_pio_h
+vgaPico2_vsync_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vgaPico2_vsync_pio_h
+.PHONY : vgaPico2_vsync_pio_h
 
 # fast build rule for target.
-vgaPico1_vsync_pio_h/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1_vsync_pio_h.dir/build.make CMakeFiles/vgaPico1_vsync_pio_h.dir/build
-.PHONY : vgaPico1_vsync_pio_h/fast
+vgaPico2_vsync_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2_vsync_pio_h.dir/build.make CMakeFiles/vgaPico2_vsync_pio_h.dir/build
+.PHONY : vgaPico2_vsync_pio_h/fast
 
 #=============================================================================
-# Target rules for targets named vgaPico1_rgb_pio_h
+# Target rules for targets named vgaPico2_rgb_pio_h
 
 # Build rule for target.
-vgaPico1_rgb_pio_h: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vgaPico1_rgb_pio_h
-.PHONY : vgaPico1_rgb_pio_h
+vgaPico2_rgb_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vgaPico2_rgb_pio_h
+.PHONY : vgaPico2_rgb_pio_h
 
 # fast build rule for target.
-vgaPico1_rgb_pio_h/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1_rgb_pio_h.dir/build.make CMakeFiles/vgaPico1_rgb_pio_h.dir/build
-.PHONY : vgaPico1_rgb_pio_h/fast
+vgaPico2_rgb_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2_rgb_pio_h.dir/build.make CMakeFiles/vgaPico2_rgb_pio_h.dir/build
+.PHONY : vgaPico2_rgb_pio_h/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -178,7 +178,7 @@ bs2_default: cmake_check_build_system
 
 # fast build rule for target.
 bs2_default/fast:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build
+	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default.dir/build
 .PHONY : bs2_default/fast
 
 #=============================================================================
@@ -191,7 +191,7 @@ bs2_default_bin: cmake_check_build_system
 
 # fast build rule for target.
 bs2_default_bin/fast:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
+	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 .PHONY : bs2_default_bin/fast
 
 #=============================================================================
@@ -204,7 +204,7 @@ bs2_default_library: cmake_check_build_system
 
 # fast build rule for target.
 bs2_default_library/fast:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/build
+	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/build.make pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/build
 .PHONY : bs2_default_library/fast
 
 #=============================================================================
@@ -238,7 +238,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.o: home/pdsilva
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.i
@@ -246,7 +246,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.i: home/pdsilva
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.s
@@ -254,7 +254,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.s: home/pdsilva
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o
@@ -262,7 +262,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.o: home/p
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.i
@@ -270,7 +270,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.i: home/p
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.s
@@ -278,7 +278,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.s: home/p
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o
@@ -286,7 +286,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.o: home/pdsilva/
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.i
@@ -294,7 +294,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.i: home/pdsilva/
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.s
@@ -302,7 +302,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.s: home/pdsilva/
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o
@@ -310,7 +310,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.o: home/pdsilva/.pic
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.i
@@ -318,7 +318,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.i: home/pdsilva/.pic
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.s
@@ -326,7 +326,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.s: home/pdsilva/.pic
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o
@@ -334,7 +334,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.o: home/pdsilva/.pico-
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.i
@@ -342,7 +342,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.i: home/pdsilva/.pico-
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.s
@@ -350,7 +350,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.s: home/pdsilva/.pico-
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o
@@ -358,7 +358,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.o: home/pdsilva/.pico
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.i
@@ -366,7 +366,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.i: home/pdsilva/.pico
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.s
@@ -374,7 +374,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.s: home/pdsilva/.pico
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o
@@ -382,7 +382,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.o: home/pds
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.i
@@ -390,7 +390,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.i: home/pds
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.s
@@ -398,7 +398,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.s: home/pds
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o
@@ -406,7 +406,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.o: home/pdsilva/.
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.i
@@ -414,7 +414,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.i: home/pdsilva/.
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.s
@@ -422,7 +422,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.s: home/pdsilva/.
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o
@@ -430,7 +430,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.o: home/pdsilva/.pic
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.i
@@ -438,7 +438,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.i: home/pdsilva/.pic
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.s
@@ -446,7 +446,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.s: home/pdsilva/.pic
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o
@@ -454,7 +454,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.o: home/pdsilva/.pic
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.i
@@ -462,7 +462,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.i: home/pdsilva/.pic
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.s
@@ -470,39 +470,39 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.s: home/pdsilva/.pic
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.s
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.o
 
 # target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.o
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.i
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.i
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.i
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.i
 
 # target to preprocess a source file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.i
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.i
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.i
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.i
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.s
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.s
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.s
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.s
 
 # target to generate assembly for a file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.s
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.s
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.s
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -510,7 +510,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.i: 
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -518,7 +518,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.s: 
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o
@@ -526,7 +526,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.o: home/p
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.i
@@ -534,7 +534,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.i: home/p
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.s
@@ -542,23 +542,39 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.s: home/p
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.s
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.o
 
 # target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.o
+
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.i
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.i
+
+# target to preprocess a source file
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.i
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.i
+
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.s
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.s
+
+# target to generate assembly for a file
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.s
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.i
@@ -566,7 +582,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.i: home/pdsilva
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.s
@@ -574,7 +590,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.s: home/pdsilva
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o
@@ -582,7 +598,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.o: home/pdsil
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.i
@@ -590,7 +606,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.s
@@ -598,7 +614,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o
@@ -606,7 +622,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.o: home/pdsilva
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.i
@@ -614,7 +630,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.i: home/pdsilva
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.s
@@ -622,7 +638,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.s: home/pdsilva
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -630,7 +646,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.o
@@ -638,7 +654,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.o: home/pdsilva
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.i
@@ -646,7 +662,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.i: home/pdsilva
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.s
@@ -654,7 +670,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.s: home/pdsilva
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o
@@ -662,7 +678,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.o: home/pdsilva
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.i
@@ -670,7 +686,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.i: home/pdsilva
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.s
@@ -678,7 +694,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.s: home/pdsilva
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o
@@ -686,7 +702,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.o: home/pdsil
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.i
@@ -694,7 +710,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.s
@@ -702,7 +718,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -710,7 +726,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spi
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -718,7 +734,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spi
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -726,7 +742,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spi
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o
@@ -734,7 +750,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.o: home/pds
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.i
@@ -742,7 +758,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.i: home/pds
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.s
@@ -750,7 +766,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.s: home/pds
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o
@@ -758,7 +774,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.o: home/pds
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.i
@@ -766,7 +782,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.i: home/pds
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.s
@@ -774,7 +790,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.s: home/pds
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o
@@ -782,7 +798,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.o: home/pdsil
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.i
@@ -790,7 +806,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.s
@@ -798,7 +814,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o
@@ -806,7 +822,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.o: home/pdsil
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.i
@@ -814,7 +830,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.s
@@ -822,7 +838,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -830,7 +846,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.o: ho
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -838,7 +854,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.i: ho
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -846,7 +862,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.s: ho
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o
@@ -854,7 +870,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.o: home/pdsil
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.i
@@ -862,7 +878,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.s
@@ -870,7 +886,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o
@@ -878,7 +894,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.o: home/pdsil
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.i
@@ -886,7 +902,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.s
@@ -894,7 +910,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -902,7 +918,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: ho
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -910,7 +926,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.o: home/pds
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -918,7 +934,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.i: home/pds
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -926,7 +942,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.s: home/pds
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -934,7 +950,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.o: hom
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -942,7 +958,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.i: hom
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -950,7 +966,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.s: hom
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -958,7 +974,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_inter
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -966,7 +982,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_inter
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -974,7 +990,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_inter
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o
@@ -982,7 +998,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.o: home/pdsilva/.
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -990,7 +1006,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.o: h
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -998,7 +1014,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.i: h
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -1006,55 +1022,63 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.s: h
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.o
 
 # target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.o
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.o
-
-# target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.o
-
-# target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.i
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.i
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.i
 
 # target to preprocess a source file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.i
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.i
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.s
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.s
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.s
 
 # target to generate assembly for a file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.s
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.s
+
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.o
+
+# target to build an object file
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.o
+
+# target to build an object file
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.S.o
+
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.o
+
+# target to build an object file
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.S.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.i
@@ -1062,7 +1086,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.i: home/
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.s
@@ -1070,23 +1094,23 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.s: home/
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.s
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.o
 
 # target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.i
@@ -1094,7 +1118,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.i: home/pdsilva
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.s
@@ -1102,47 +1126,31 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.s: home/pdsilva
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.s
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.o
 
 # target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.S.o
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.o
 
 # target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.i
-
-# target to preprocess a source file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
-
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.s
-
-# target to generate assembly for a file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.S.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.i
@@ -1150,7 +1158,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.i: home/pd
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.s
@@ -1158,31 +1166,23 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.s: home/pd
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.s
 
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.o
 
 # target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o
-
-# target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.i
@@ -1190,7 +1190,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.s
@@ -1198,23 +1198,15 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.s
-
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o
-
-# target to build an object file
-home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-.PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i
@@ -1222,7 +1214,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.i: home
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s
@@ -1230,7 +1222,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.s: home
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o
@@ -1238,7 +1230,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.o: h
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.i
@@ -1246,7 +1238,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.i: h
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.s
@@ -1254,7 +1246,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.s: h
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o
@@ -1262,7 +1254,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.o: hom
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.i
@@ -1270,7 +1262,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.i: hom
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.s
@@ -1278,7 +1270,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.s: hom
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o
@@ -1286,7 +1278,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.o: home/pdsil
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.i
@@ -1294,7 +1286,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.s
@@ -1302,7 +1294,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o
@@ -1310,7 +1302,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.o: home/pds
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.i
@@ -1318,7 +1310,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.i: home/pds
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.s
@@ -1326,7 +1318,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.s: home/pds
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -1334,7 +1326,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.o
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -1342,7 +1334,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.i
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -1350,7 +1342,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.s
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -1358,7 +1350,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_c
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -1366,7 +1358,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_c
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -1374,7 +1366,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_c
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -1382,7 +1374,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_s
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -1390,7 +1382,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_s
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -1398,7 +1390,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_s
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -1406,7 +1398,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standa
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -1414,7 +1406,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standa
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -1422,7 +1414,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standa
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o
@@ -1430,7 +1422,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.o: home/pdsilva
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.i
@@ -1438,7 +1430,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.i: home/pdsilva
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s
@@ -1446,7 +1438,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.s: home/pdsilva
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -1454,7 +1446,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.o: home/pdsil
 
 # target to build an object file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.i: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1462,7 +1454,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.i: home/pdsil
 
 # target to preprocess a source file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.s: home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1470,7 +1462,7 @@ home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.s: home/pdsil
 
 # target to generate assembly for a file
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.s
 
 vga16_graphics_demo.o: vga16_graphics_demo.c.o
@@ -1478,7 +1470,7 @@ vga16_graphics_demo.o: vga16_graphics_demo.c.o
 
 # target to build an object file
 vga16_graphics_demo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/vga16_graphics_demo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/vga16_graphics_demo.c.o
 .PHONY : vga16_graphics_demo.c.o
 
 vga16_graphics_demo.i: vga16_graphics_demo.c.i
@@ -1486,7 +1478,7 @@ vga16_graphics_demo.i: vga16_graphics_demo.c.i
 
 # target to preprocess a source file
 vga16_graphics_demo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/vga16_graphics_demo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/vga16_graphics_demo.c.i
 .PHONY : vga16_graphics_demo.c.i
 
 vga16_graphics_demo.s: vga16_graphics_demo.c.s
@@ -1494,7 +1486,7 @@ vga16_graphics_demo.s: vga16_graphics_demo.c.s
 
 # target to generate assembly for a file
 vga16_graphics_demo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/vga16_graphics_demo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/vga16_graphics_demo.c.s
 .PHONY : vga16_graphics_demo.c.s
 
 vga16_graphics_v2.o: vga16_graphics_v2.c.o
@@ -1502,7 +1494,7 @@ vga16_graphics_v2.o: vga16_graphics_v2.c.o
 
 # target to build an object file
 vga16_graphics_v2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/vga16_graphics_v2.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/vga16_graphics_v2.c.o
 .PHONY : vga16_graphics_v2.c.o
 
 vga16_graphics_v2.i: vga16_graphics_v2.c.i
@@ -1510,7 +1502,7 @@ vga16_graphics_v2.i: vga16_graphics_v2.c.i
 
 # target to preprocess a source file
 vga16_graphics_v2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/vga16_graphics_v2.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/vga16_graphics_v2.c.i
 .PHONY : vga16_graphics_v2.c.i
 
 vga16_graphics_v2.s: vga16_graphics_v2.c.s
@@ -1518,7 +1510,7 @@ vga16_graphics_v2.s: vga16_graphics_v2.c.s
 
 # target to generate assembly for a file
 vga16_graphics_v2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico1.dir/build.make CMakeFiles/vgaPico1.dir/vga16_graphics_v2.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/vga16_graphics_v2.c.s
 .PHONY : vga16_graphics_v2.c.s
 
 # Help Target
@@ -1532,12 +1524,12 @@ help:
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... pico_status_led_ws2812_pio_h"
-	@echo "... vgaPico1_hsync_pio_h"
-	@echo "... vgaPico1_rgb_pio_h"
-	@echo "... vgaPico1_vsync_pio_h"
+	@echo "... vgaPico2_hsync_pio_h"
+	@echo "... vgaPico2_rgb_pio_h"
+	@echo "... vgaPico2_vsync_pio_h"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
-	@echo "... vgaPico1"
+	@echo "... vgaPico2"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.s"
@@ -1568,9 +1560,9 @@ help:
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.s"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.o"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.i"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.s"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.o"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.i"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.s"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.s"
@@ -1578,6 +1570,8 @@ help:
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.o"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.i"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.s"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.s"
@@ -1635,31 +1629,28 @@ help:
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.s"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.o"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.o"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.o"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.i"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.s"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.o"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.i"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.s"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.o"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.o"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.s"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.s"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.o"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.o"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.i"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.s"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.o"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.s"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o"
+	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.s"
-	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.s"

@@ -143,6 +143,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pdsilva/project/vgaPico/vgaPico2/libvga/cursor.c" "CMakeFiles/vgaPico2.dir/cursor.c.o" "gcc" "CMakeFiles/vgaPico2.dir/cursor.c.o.d"
   "/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c" "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o" "gcc" "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o.d"
   "/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c" "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o" "gcc" "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o.d"
   "/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c" "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o" "gcc" "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o.d"

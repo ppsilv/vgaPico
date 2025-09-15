@@ -70,6 +70,18 @@ char textcolor, textbgcolor, wrap;
 #define _width 640
 #define _height 480
 
+unsigned short get_cursor_y(){
+  return cursor_y;
+}
+unsigned short get_cursor_x()
+{
+  return cursor_x;
+}
+unsigned short get_textsize()
+{
+  return textsize;
+} 
+
 void initVGA() {
         // Choose which PIO instance to use (there are two instances, each with 4 state machines)
     PIO pio = pio0;
@@ -592,7 +604,7 @@ void tft_write(unsigned char c){
   } else {
     drawChar(cursor_x, cursor_y, c, textcolor, textbgcolor, textsize);
     cursor_x += textsize*6;
-    if (wrap && (cursor_x > (_width - textsize*6))) {
+    if (/*wrap &&*/ (cursor_x > (_width - textsize*6))) {
       cursor_y += textsize*8;
       cursor_x = 0;
     }

@@ -14,7 +14,7 @@
 
 #define vsync_wrap_target 1
 #define vsync_wrap 13
-#define vsync_pio_version 0
+#define vsync_pio_version 1
 
 static const uint16_t vsync_program_instructions[] = {
     0x80a0, //  0: pull   block

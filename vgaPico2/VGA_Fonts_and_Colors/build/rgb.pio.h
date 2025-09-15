@@ -14,7 +14,7 @@
 
 #define rgb_wrap_target 2
 #define rgb_wrap 8
-#define rgb_pio_version 0
+#define rgb_pio_version 1
 
 #define rgb_vid_freq 250
 

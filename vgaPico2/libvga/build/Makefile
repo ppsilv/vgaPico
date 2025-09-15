@@ -233,6 +233,30 @@ pico_status_led_ws2812_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 .PHONY : pico_status_led_ws2812_pio_h/fast
 
+cursor.o: cursor.c.o
+.PHONY : cursor.o
+
+# target to build an object file
+cursor.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/cursor.c.o
+.PHONY : cursor.c.o
+
+cursor.i: cursor.c.i
+.PHONY : cursor.i
+
+# target to preprocess a source file
+cursor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/cursor.c.i
+.PHONY : cursor.c.i
+
+cursor.s: cursor.c.s
+.PHONY : cursor.s
+
+# target to generate assembly for a file
+cursor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vgaPico2.dir/build.make CMakeFiles/vgaPico2.dir/cursor.c.s
+.PHONY : cursor.c.s
+
 home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.o: home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o
 .PHONY : home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.o
 
@@ -1554,6 +1578,9 @@ help:
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
 	@echo "... vgaPico2"
+	@echo "... cursor.o"
+	@echo "... cursor.i"
+	@echo "... cursor.s"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.o"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.i"
 	@echo "... home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.s"

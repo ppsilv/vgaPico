@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/pdsilva/.pico-sdk/sdk/2.2.0")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/pdsilva/project/vgaPico/VGA_Fonts_and_Colors/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/pdsilva/project/vgaPico/vgaPico2/VGA_Fonts_and_Colors/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

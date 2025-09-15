@@ -84,5 +84,8 @@ CMakeFiles/vgaPico2.dir/vga16_text_demo.c.o: \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/string.h \
  /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_drv.h \
  /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_text.h \
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/cursor.h \
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/colors.h \
+ /home/pdsilva/project/vgaPico/vgaPico2/libvga/font.h \
  /home/pdsilva/project/vgaPico/vgaPico2/libvga/pt_cornell_rp2040_v1_4.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/ctype.h

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/vgaPico2.dir/cursor.c.o"
+  "CMakeFiles/vgaPico2.dir/cursor.c.o.d"
   "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o"
   "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o.d"
   "CMakeFiles/vgaPico2.dir/home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o"
