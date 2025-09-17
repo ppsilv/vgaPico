@@ -26,16 +26,15 @@
 
 typedef struct {
     uint8_t name[32];
+    uint8_t mode; // 0=320x240, 1=640x480
     uint16_t width;
     uint16_t height;
     uint8_t tab_space; // font size multiplier
     color_t textcolor;
     color_t textbgcolor;
     font_t font; 
-    cursor_t cursor;  
+ //   cursor_t cursor;  
 } screenMode_t;
-
-
 
 
 void tft_write(unsigned char c) ;

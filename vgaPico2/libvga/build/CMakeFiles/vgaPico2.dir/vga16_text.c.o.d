@@ -1,5 +1,5 @@
 CMakeFiles/vgaPico2.dir/vga16_text.c.o: \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_text.c \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/vga16_text.c \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdio.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_ansi.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/newlib.h \
@@ -30,9 +30,9 @@ CMakeFiles/vgaPico2.dir/vga16_text.c.o: \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdint.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_intsup.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_stdint.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/build/generated/pico_base/pico/version.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build/generated/pico_base/pico/version.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico/config.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/build/generated/pico_base/pico/config_autogen.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build/generated/pico_base/pico/config_autogen.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/boards/include/boards/pico2.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/include/pico/platform.h \
@@ -83,13 +83,14 @@ CMakeFiles/vgaPico2.dir/vga16_text.c.o: \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/dma.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/dma.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/dma_debug.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_text.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_drv.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/cursor.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/colors.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/font.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/glcdfont.c \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/vga16_text.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/vga16_drv.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/cursor.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/colors.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/font.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/glcdfont.c \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/string.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_locale.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/strings.h \
- /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/string.h
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/string.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/font_8x16.h

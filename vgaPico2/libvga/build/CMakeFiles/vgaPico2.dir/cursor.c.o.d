@@ -1,5 +1,6 @@
 CMakeFiles/vgaPico2.dir/cursor.c.o: \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/cursor.c \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/cursor.c \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/cursor.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico/types.h \
@@ -18,9 +19,9 @@ CMakeFiles/vgaPico2.dir/cursor.c.o: \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_intsup.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_stdint.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/build/generated/pico_base/pico/version.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build/generated/pico_base/pico/version.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/common/pico_base_headers/include/pico/config.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/build/generated/pico_base/pico/config_autogen.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build/generated/pico_base/pico/config_autogen.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/boards/include/boards/pico2.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/include/pico/platform.h \
@@ -65,8 +66,15 @@ CMakeFiles/vgaPico2.dir/cursor.c.o: \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_resets/include/hardware/resets.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/resets.h \
  /home/pdsilva/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/resets.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_text.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/vga16_drv.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/cursor.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/colors.h \
- /home/pdsilva/project/vgaPico/vgaPico2/libvga/font.h
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/vga16_text.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/vga16_drv.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/colors.h \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/font.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdlib.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/reent.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_ansi.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_types.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_types.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/lock.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/stdlib.h \
+ /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/alloca.h

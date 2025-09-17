@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/pdsilva/project/vgaPico/vgaPico2/libvga/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

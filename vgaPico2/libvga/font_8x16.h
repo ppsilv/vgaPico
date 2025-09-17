@@ -4,7 +4,8 @@
 // file modified from 
 // http://ece320web.groups.et.byu.net/labs/VGATextGeneration/VGA_Terminal.html
 //
-const char bigFont[16*128]=
+
+const char font_8x16[16*128]=
 {
    // code x00
    0b00000000, // 0

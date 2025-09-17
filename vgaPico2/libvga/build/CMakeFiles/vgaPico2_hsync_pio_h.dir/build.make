@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pdsilva/project/vgaPico/vgaPico2/libvga
+CMAKE_SOURCE_DIR = /home/pdsilva/Projects/vgaPico/vgaPico2/libvga
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pdsilva/project/vgaPico/vgaPico2/libvga/build
+CMAKE_BINARY_DIR = /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build
 
 # Utility rule file for vgaPico2_hsync_pio_h.
 
@@ -68,9 +68,9 @@ include CMakeFiles/vgaPico2_hsync_pio_h.dir/progress.make
 
 CMakeFiles/vgaPico2_hsync_pio_h: hsync.pio.h
 
-hsync.pio.h: /home/pdsilva/project/vgaPico/vgaPico2/libvga/hsync.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pdsilva/project/vgaPico/vgaPico2/libvga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating hsync.pio.h"
-	/home/pdsilva/.pico-sdk/tools/2.2.0/pioasm/pioasm -o c-sdk -v 1 /home/pdsilva/project/vgaPico/vgaPico2/libvga/hsync.pio /home/pdsilva/project/vgaPico/vgaPico2/libvga/build/hsync.pio.h
+hsync.pio.h: /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/hsync.pio
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating hsync.pio.h"
+	/home/pdsilva/.pico-sdk/tools/2.2.0/pioasm/pioasm -o c-sdk -v 1 /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/hsync.pio /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build/hsync.pio.h
 
 vgaPico2_hsync_pio_h: CMakeFiles/vgaPico2_hsync_pio_h
 vgaPico2_hsync_pio_h: hsync.pio.h
@@ -86,6 +86,6 @@ CMakeFiles/vgaPico2_hsync_pio_h.dir/clean:
 .PHONY : CMakeFiles/vgaPico2_hsync_pio_h.dir/clean
 
 CMakeFiles/vgaPico2_hsync_pio_h.dir/depend:
-	cd /home/pdsilva/project/vgaPico/vgaPico2/libvga/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pdsilva/project/vgaPico/vgaPico2/libvga /home/pdsilva/project/vgaPico/vgaPico2/libvga /home/pdsilva/project/vgaPico/vgaPico2/libvga/build /home/pdsilva/project/vgaPico/vgaPico2/libvga/build /home/pdsilva/project/vgaPico/vgaPico2/libvga/build/CMakeFiles/vgaPico2_hsync_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pdsilva/Projects/vgaPico/vgaPico2/libvga /home/pdsilva/Projects/vgaPico/vgaPico2/libvga /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/build/CMakeFiles/vgaPico2_hsync_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/vgaPico2_hsync_pio_h.dir/depend
 

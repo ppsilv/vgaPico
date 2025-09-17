@@ -11,6 +11,7 @@
 #include "glcdfont.c"
 //#include "font_rom_brl4.h"
 #include <string.h>
+#include "font_8x16.h"
 
 // 5x7 font
 void writeStringBold(char* str);
@@ -25,7 +26,11 @@ char wrap;
 int _width=0;  //640
 int _height=0; //480
 
+uint8_t FONT_HEIGHT=16;
+uint8_t FONT_WIDTH=8;
 
+
+screenMode_t screenMode ;
 
 void init_text_screen(char mode){
   
@@ -164,18 +169,21 @@ static void drawChar_interna(short x, short y, unsigned char c, color_t color, c
     return;
 
     // Calcula a área do caractere
-    short charWidth = 6 * size;
+    short charWidth = 8 * size;
     short charHeight = 8 * size;    
     // PRIMEIRO: Limpa a área completa do caractere
     fillRect(x, y, charWidth, charHeight, BLACK);
 
-  for (i=0; i<6; i++ ) {
+  uint8_t lastColumn = 5 ;
+  uint8_t altura = 8 ;
+  uint8_t largura = 6 ;
+  for (i=0; i<largura; i++ ) {
     unsigned char line;
-    if (i == 5)
+    if (i == lastColumn)
       line = 0x0;
     else
-      line = pgm_read_byte(font+(c*5)+i);
-    for ( j = 0; j<8; j++) {
+      line = pgm_read_byte(font+(c*lastColumn)+i);
+    for ( j = 0; j < altura; j++) {
       if (line & 0x1) {
         if (size == 1) // default size
           drawPixel(x+i, y+j, color);
@@ -194,8 +202,50 @@ static void drawChar_interna(short x, short y, unsigned char c, color_t color, c
   }
 }
 
+void drawChar2( int start_x, int start_y, uint8_t char_code, int color,  int bgcolor, unsigned char size) {
+    //uint8_t char_bytes[BYTES_PER_CHAR];
+
+    // Calcula a área do caractere
+    size = 1;
+    short charWidth = 8 * size;
+    short charHeight = 16 * size;    
+    // PRIMEIRO: Limpa a área completa do caractere
+    fillRect(start_x, start_y, charWidth, charHeight, BLACK);
+
+    const uint8_t *char_start = font_8x16 + (char_code * FONT_HEIGHT);
+    // Percorrer todas as linhas (bytes) do caractere
+    for (int row = 0; row < FONT_HEIGHT; row++) {
+        uint8_t current_byte = char_start[row];
+
+        // Percorrer todos os bits do byte (da esquerda para a direita)
+        for (int bit = 7; bit >= 0; bit--) {
+            // Calcular coordenadas do pixel
+            int pixel_x = start_x + (7 - bit);  // 7-bit para ir da esquerda para direita
+            int pixel_y = start_y + row;
+            // Verificar se o bit está setado (1)
+            if ((current_byte >> bit) & 1) {
+                // Desenhar o pixel
+                if( size == 1  )
+                  drawPixel(pixel_x, pixel_y, color);
+                else  
+                fillRect(pixel_x+(row*size), pixel_y+(bit*size), size, size, color);
+            }else{
+                // Desenhar o pixel
+                if( size == 1  )
+                  drawPixel(pixel_x, pixel_y, BLACK);
+                else  
+                fillRect(pixel_x+row*size, pixel_y+bit*size, size, size, BLACK);
+            }
+        }
+    }
+}
+
+
 void drawChar(unsigned char c, color_t color, color_t bg, unsigned char size) {
-  drawChar_interna( cursor_x, cursor_y, c, color, bg, size);
+  if(size == 2)
+    drawChar_interna( cursor_x, cursor_y, c, color, bg, size);
+  else  
+    drawChar2( cursor_x, cursor_y, c, color, bg, size);
 }
 
 unsigned short get_cursor_y(){
@@ -262,10 +312,11 @@ void tft_write(unsigned char c){
           cursor_x = new_x;
       }
   } else {
-    drawChar_interna(cursor_x, cursor_y, c, textcolor, textbgcolor, textsize);
-    cursor_x += textsize*6;
+    drawChar( c, textcolor, textbgcolor, textsize);
+    cursor_x += textsize*FONT_WIDTH;
     if (/*wrap &&*/ (cursor_x > (_width - textsize*6))) {
-      cursor_y += textsize*8;
+      //cursor_y += textsize*FONT_HEIGHT;
+      cursor_y += FONT_HEIGHT;
       cursor_x = 0;
     }
   }

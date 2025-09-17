@@ -6,6 +6,7 @@
 
 typedef struct
 {
+    uint8_t name[32];     // Name of the font
     uint8_t width;        // Width of the font in pixels
     uint8_t height;       // Height of the font in pixels
     uint8_t size;    // ASCII code of the first character

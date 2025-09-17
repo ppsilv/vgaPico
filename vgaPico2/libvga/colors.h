@@ -9,7 +9,4 @@ enum colors {BLACK, DARK_GREEN, MED_GREEN, GREEN,
 // Tipo para facilitar o uso
 typedef enum colors color_t;
 
-
-
-
 #endif
