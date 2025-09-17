@@ -1,12 +1,12 @@
 #ifndef CURSOR_H
 #define CURSOR_H
-
+/*
 #include "pico/stdlib.h"
 #include "vga16_text.h"
 #include "colors.h"
 
 // Estrutura opaca - os detalhes internos são privados
-typedef struct cursor_t cursor_t;
+//typedef struct cursor_t cursor_t;
 
 // "Construtor" - cria uma nova instância do cursor
 cursor_t* cursor_create(short x, short y, uint32_t blink_interval, unsigned char fontsize);
@@ -22,5 +22,5 @@ short cursor_get_x(const cursor_t* cursor);
 short cursor_get_y(const cursor_t* cursor);
 bool cursor_is_visible(const cursor_t* cursor);
 bool cursor_is_enabled(const cursor_t* cursor);
-
+*/
 #endif

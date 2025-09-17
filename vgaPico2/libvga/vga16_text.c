@@ -3,92 +3,82 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 #include "hardware/dma.h"
-// Our assembled programs:
 
-// Header file
 #include "vga16_text.h"
-// Font file
-#include "glcdfont.c"
-//#include "font_rom_brl4.h"
+#include "font_5x7.h"
 #include <string.h>
 #include "font_8x16.h"
+#include <stdint.h>
 
 // 5x7 font
 void writeStringBold(char* str);
 
-// For drawing characters
-unsigned short cursor_y, cursor_x, textsize ;
-color_t textcolor, textbgcolor;
-char wrap;
+
+typedef enum {
+    CURSOR_BLOCK,
+    CURSOR_UNDERLINE,
+    CURSOR_LINE
+} cursorShape_t ;
+
+struct font{
+    uint8_t *name;
+    uint8_t width ;
+    uint8_t height ;
+    uint8_t size;
+    const uint8_t *data ;
+};
+typedef struct font font_t ;
+
+struct cursor{
+    uint16_t x;
+    uint16_t y;
+    bool visible;
+    bool blink;
+    uint16_t blink_interval;
+    cursorShape_t shape ;// 0 - block, 1 - underline, 2 - line
+};
+typedef struct cursor cursor_t;
+
+typedef struct  {
+    uint16_t width;  //320, 640
+    uint16_t height; //240, 480
+    cursor_t cursor ;
+    screenMode_t mode ;
+    font_t font ;
+    color_t textcolor ;
+    color_t textbgcolor ;
+
+    uint32_t txcount;
+    uint16_t topmask;
+    uint16_t bottommask;
+    uint8_t tabspace;    
+    uint8_t* vga_data_array;    
+}vga16_text_private_t;
 
 
-// Screen width/height
-int _width=0;  //640
-int _height=0; //480
 
-uint8_t FONT_HEIGHT=16;
-uint8_t FONT_WIDTH=8;
+static vga16_text_t * vga = NULL ;
 
-
-screenMode_t screenMode ;
-
-void init_text_screen(char mode){
-  
-  if(mode==0){    
-    cursor_x = 0 ;
-    cursor_y = 0 ;
-    textsize = 1 ;
-    textcolor = WHITE ;
-    textbgcolor = BLACK ;
-    wrap = true ;
-    _width = 320;
-    _height= 240;
-    //cursor_init(cursor) ;
-  }
-  else if(mode==1){    
-    cursor_x = 0 ;
-    cursor_y = 0 ;
-    textsize = 1 ;
-    textcolor = WHITE ;
-    textbgcolor = BLACK ;
-    wrap = true ;
-    _width  = 640;
-    _height = 480;
-    //cursor_init(cursor) ;
-  }
-
-}
+ 
 
 void clrscr(){
-  // clear the screen
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+
   memset(&vga_data_array[0], 0, TXCOUNT) ;
   // reset cursor position
-  cursor_x = 0 ;
-  cursor_y = 0 ;
+  priv->cursor.x = 0 ;
+  priv->cursor.y = 0 ;
 }
 
-inline void pchar(char c){
+static void pchar(char c){
     tft_write(c);
 }
 
-// A function for drawing a pixel with a specified color.
-// Note that because information is passed to the PIO state machines through
-// a DMA channel, we only need to modify the contents of the array and the
-// pixels will be automatically updated on the screen.
 void drawPixel(short x, short y, color_t color) {
-    // Range checks (640x480 display)
-    // if (x > 639) x = 639 ;
-    // if (x < 0) x = 0 ;
-    // if (y < 0) y = 0 ;
-    // if (y > 479) y = 479 ;
-    if((x > (_width-1)) | (x < 0) | (y > (_height-1)) | (y < 0) ) return;
+    vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+    if((x > (priv->width-1)) | (x < 0) | (y > (priv->height-1)) | (y < 0) ) return;
 
-    // Which pixel is it?
-    int pixel = ((_width * y) + x) ;
-
-    // Is this pixel stored in the first 4 bits
-    // of the vga data array index, or the second
-    // 4 bits? Check, then mask.
+    int pixel = ((priv->width * y) + x) ;
     if (pixel & 1) {
         vga_data_array[pixel>>1] = (vga_data_array[pixel>>1] & TOPMASK) | (color << 4) ;
     }
@@ -98,9 +88,10 @@ void drawPixel(short x, short y, color_t color) {
 }
 
 void drawHLine(int x, int y, int w, color_t color) {
+    vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
   // range checks
-  if((x >= _width) || (y >= _height)) return;
-  if((x + w - 1) >= _width)  w = _width  - x - 1;
+  if((x >= priv->width) || (y >= priv->height)) return;
+  if((x + w - 1) >= priv->width)  w = priv->width  - x - 1;
   //
   //short xx = x;
   short both_color = color | (color<<4) ;
@@ -118,52 +109,22 @@ void drawHLine(int x, int y, int w, color_t color) {
   // draw rest of line
   int len = (w>>1)  ;
   if (len>0 && y<480 ) memset(&vga_data_array[320*y+(x>>1)], both_color, len) ;
- // original code
-    // for (int i=x; i<=(x+w); i++) {
-    //     drawPixel(i, y, color) ;
-    // }
-}
+ }
 
-
-
-// fill a rectangle
 void fillRect(short x, short y, short w, short h, color_t color) {
-/* Draw a filled rectangle with starting top-left vertex (x,y),
- *  width w and height h with given color
- * Parameters:
- *      x:  x-coordinate of top-left vertex; top left of screen is x=0
- *              and x increases to the right
- *      y:  y-coordinate of top-left vertex; top left of screen is y=0
- *              and y increases to the bottom
- *      w:  width of rectangle
- *      h:  height of rectangle
- *      color:  3-bit color value
- * Returns:     Nothing
- */
+   vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+   if((y + h - 1) >= priv->height) h = priv->height - y - 1;
 
-  // rudimentary clipping (drawChar w/big text requires this)
-  // if((x >= _width) || (y >= _height)) return;
-  // if((x + w - 1) >= _width)  w = _width  - x - 1;
-   if((y + h - 1) >= _height) h = _height - y - 1;
-
-  // tft_setAddrWindow(x, y, x+w-1, y+h-1);
-
-  // for(int i=x; i<(x+w); i++) {
-  //   for(int j=y; j<(y+h); j++) {
-  //       drawPixel(i, j, color);
-  //   }
-  // }
   for(int j=y; j<(y+h); j++) {
     drawHLine(x, j, w, color) ;
   }
 }
 
-
-// Draw a character
 static void drawChar_interna(short x, short y, unsigned char c, color_t color, color_t bg, unsigned char size) {
-    char i, j;
-  if((x >= _width)            || // Clip right
-     (y >= _height)           || // Clip bottom
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  char i, j;
+  if((x >= priv->width)            || // Clip right
+     (y >= priv->height)           || // Clip bottom
      ((x + 6 * size - 1) < 0) || // Clip left
      ((y + 8 * size - 1) < 0))   // Clip top
     return;
@@ -182,7 +143,7 @@ static void drawChar_interna(short x, short y, unsigned char c, color_t color, c
     if (i == lastColumn)
       line = 0x0;
     else
-      line = pgm_read_byte(font+(c*lastColumn)+i);
+      line = pgm_read_byte(font_5x7+(c*lastColumn)+i);
     for ( j = 0; j < altura; j++) {
       if (line & 0x1) {
         if (size == 1) // default size
@@ -203,18 +164,18 @@ static void drawChar_interna(short x, short y, unsigned char c, color_t color, c
 }
 
 void drawChar2( int start_x, int start_y, uint8_t char_code, int color,  int bgcolor, unsigned char size) {
-    //uint8_t char_bytes[BYTES_PER_CHAR];
+    vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
 
     // Calcula a área do caractere
-    size = 1;
+    size=1;
     short charWidth = 8 * size;
     short charHeight = 16 * size;    
     // PRIMEIRO: Limpa a área completa do caractere
     fillRect(start_x, start_y, charWidth, charHeight, BLACK);
 
-    const uint8_t *char_start = font_8x16 + (char_code * FONT_HEIGHT);
+    const uint8_t *char_start = font_8x16 + (char_code * priv->font.height);
     // Percorrer todas as linhas (bytes) do caractere
-    for (int row = 0; row < FONT_HEIGHT; row++) {
+    for (int row = 0; row < priv->font.height; row++) {
         uint8_t current_byte = char_start[row];
 
         // Percorrer todos os bits do byte (da esquerda para a direita)
@@ -242,139 +203,102 @@ void drawChar2( int start_x, int start_y, uint8_t char_code, int color,  int bgc
 
 
 void drawChar(unsigned char c, color_t color, color_t bg, unsigned char size) {
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+
   if(size == 2)
-    drawChar_interna( cursor_x, cursor_y, c, color, bg, size);
+    drawChar_interna( priv->cursor.x, priv->cursor.y, c, color, bg, size);
   else  
-    drawChar2( cursor_x, cursor_y, c, color, bg, size);
+    drawChar2( priv->cursor.x, priv->cursor.y, c, color, bg, size);
 }
 
-unsigned short get_cursor_y(){
-  return cursor_y;
-}
-unsigned short get_cursor_x()
-{
-  return cursor_x;
-}
-unsigned short get_textsize()
-{
-  return textsize;
-} 
+//unsigned short get_cursor_y(){
+//  return cursor_y;
+//}
+//unsigned short get_cursor_x()
+//{
+//  return cursor_x;
+//}
+//unsigned short get_textsize()
+//{
+//  return textsize;
+//} 
 
-inline void setTextCursor(short x, short y) {
-/* Set cursor for text to be printed
- * Parameters:
- *      x = x-coordinate of top-left of text starting
- *      y = y-coordinate of top-left of text starting
- * Returns: Nothing
- */
-  cursor_x = x;
-  cursor_y = y;
+static void setTextCursor(short x, short y) {
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  priv->cursor.x = x;
+  priv->cursor.y = y;
 }
 
-inline void setTextSize(unsigned char s) {
-/*Set size of text to be displayed
- * Parameters:
- *      s = text size (1 being smallest)
- * Returns: nothing
- */
-  textsize = (s > 0) ? s : 1;
+static void setTextSize(unsigned char s) {
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  priv->font.size = (s > 0) ? s : 1;
 }
 
-inline void setTextColor(char c) {
-  // For 'transparent' background, we'll set the bg
-  // to the same as fg instead of using a flag
-  textcolor = textbgcolor = c;
-}
+//static void setTextColor(char c) {
+//  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+//  priv->textcolor = priv->textbgcolor = c;
+//}
 
-inline void setTextColor2(char c, char b) {
-/* Set color of text to be displayed
- * Parameters:
- *      c = 16-bit color of text
- *      b = 16-bit color of text background
- */
-  textcolor   = c;
-  textbgcolor = b;
-}
-
-inline void setTextWrap(char w) {
-  wrap = w;
+static void setTextColor(char c, char b) {
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  priv->textcolor = c;
+  priv->textbgcolor = b;
 }
 
 void tft_write(unsigned char c){
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+
   if (c == '\n') {
-    cursor_y += textsize*8;
-    cursor_x  = 0;
+    priv->cursor.y += priv->font.size*8;
+    priv->cursor.x  = 0;
   } else if (c == '\r') {
     // skip em
   } else if (c == '\t'){
-      int new_x = cursor_x + tabspace;
-      if (new_x < _width){
-          cursor_x = new_x;
+      int new_x = priv->cursor.x + priv->tabspace;
+      if (new_x < priv->width){
+          priv->cursor.x = new_x;
       }
   } else {
-    drawChar( c, textcolor, textbgcolor, textsize);
-    cursor_x += textsize*FONT_WIDTH;
-    if (/*wrap &&*/ (cursor_x > (_width - textsize*6))) {
-      //cursor_y += textsize*FONT_HEIGHT;
-      cursor_y += FONT_HEIGHT;
-      cursor_x = 0;
+    drawChar( c, priv->textcolor, priv->textbgcolor, priv->font.size);
+    priv->cursor.x += priv->font.size*priv->font.width;
+
+    if ((priv->cursor.x > (priv->width - priv->font.size*6))) {
+      priv->cursor.y += priv->font.height;
+      priv->cursor.x = 0;
     }
+ 
   }
 }
 
-inline void printString(char* str){
-/* Print text onto screen
- * Call tft_setCursor(), tft_setTextColor(), tft_setTextSize()
- *  as necessary before printing
- */
+static void printString(char* str){
     while (*str){
         tft_write(*str++);
     }
 }
 
-//=================================================
-// added 10/16/2023 brl4
-inline void setTextColorBig(color_t color, char background) {
-/* Set color of text to be displayed
- * Parameters:
- *      color = 16-bit color of text
- *      b = 16-bit color of text background
- *      background ==-1 means trasnparten background
- */
-  textcolor   = color;
-  textbgcolor = background;
+static void setTextColorBig(color_t color, char background) {
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  priv->textcolor = color;
+  priv->textbgcolor = background;
 }
  
-inline void writeStringBold(char* str){
-/* Print text onto screen
- * Call tft_setCursor(), tft_setTextColorBig()
- *  as necessary before printing
- */
-   /* Print text onto screen
- * Call tft_setCursor(), tft_setTextColor(), tft_setTextSize()
- *  as necessary before printing
- */
+static void writeStringBold(char* str){
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+
     char temp_bg ;
-    temp_bg = textbgcolor;
+    temp_bg = priv->textbgcolor;
     while (*str){
         char c = *str++;
-        drawChar_interna(cursor_x, cursor_y, c, textcolor, textbgcolor, textsize);
-        drawChar_interna(cursor_x+1, cursor_y, c, textcolor, textcolor, textsize);
-        cursor_x += 7 * textsize ;
+        drawChar_interna(priv->cursor.x, priv->cursor.y, c, priv->textcolor, priv->textbgcolor, priv->font.size);
+        drawChar_interna(priv->cursor.x+1, priv->cursor.y, c, priv->textcolor, priv->textcolor, priv->font.size);
+        priv->cursor.x += 7 * priv->font.size ;
     }
-    textbgcolor = temp_bg ;
+    priv->textbgcolor = temp_bg ;
 }
 
-
-//////////////////////////////////////////////////
-// get the color of a pixel
 short readPixel(short x, short y) {
-  // Which pixel is it?
   int pixel = ((640 * y) + x) ;
   short color ;
-  // Is this pixel stored in the first 4 bits
-  // of the vga data array index, or the second
-  // 4 bits? Check, then mask.
   if (pixel & 1) {
       color = vga_data_array[pixel>>1] >> 4 ;
   }
@@ -384,5 +308,52 @@ short readPixel(short x, short y) {
   return color ;
 }
 
- 
+ vga16_text_t* create_screen(screenMode_t mode){
+  vga = (vga16_text_t*)malloc(sizeof(vga16_text_t));
+  vga16_text_private_t* priv = (vga16_text_private_t*)malloc(sizeof(vga16_text_private_t));
+  
+  if (!vga || !priv) {
+      free(vga);
+      free(priv);
+      return NULL;
+  }
+  
+  vga->_private = priv;
+  priv->cursor.x = 0 ;
+  priv->cursor.y = 0 ;
+  priv->textcolor = WHITE ;
+  priv->textbgcolor = BLACK ;
+  priv->font.name = font_name;
+  priv->font.width = font_width ;
+  priv->font.height= font_height ;
+  priv->font.size = font_size ;   //textsize
+  priv->font.data = font_8x16 ;
+  priv->tabspace = 4;
+  priv->txcount = TXCOUNT ;
+  priv->topmask = 0b00001111 ;
+  priv->bottommask = 0b11110000 ;
+  priv->vga_data_array = vga_data_array ;
+
+
+  if( mode == MODE_320x240 ){    
+    priv->width = 320;
+    priv->height= 240;
+  }
+  else if( mode == MODE_640x480 ){    
+    priv->width = 640;
+    priv->height= 480;
+  }else{ //default
+    priv->width = 640;
+    priv->height= 480;
+  }
+
+  vga->printString = printString;
+  vga->setTextColor = setTextColor;
+  vga->setTextSize = setTextSize;
+  vga->clrscr = clrscr;
+
+
+  return vga;
+}
+
  

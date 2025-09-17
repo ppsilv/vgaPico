@@ -88,7 +88,7 @@ CMakeFiles/vgaPico2.dir/vga16_text.c.o: \
  /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/cursor.h \
  /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/colors.h \
  /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/font.h \
- /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/glcdfont.c \
+ /home/pdsilva/Projects/vgaPico/vgaPico2/libvga/font_5x7.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/string.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_locale.h \
  /home/pdsilva/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/strings.h \

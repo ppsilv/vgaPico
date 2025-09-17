@@ -1,6 +1,6 @@
 #include "cursor.h"
 #include <stdlib.h>
-
+/*
 // Estrutura completa (privada)
 struct cursor_t {
     // Atributos
@@ -14,7 +14,8 @@ struct cursor_t {
     // Ponteiro para a função de callback (poderia ser expandido para polimorfismo)
     bool (*blink_callback)(repeating_timer_t *rt);
 };
-
+*/
+/*
 // Função de callback interna
 static bool cursor_blink_callback_internal(repeating_timer_t *rt) {
     cursor_t *cursor = (cursor_t *)rt->user_data;
@@ -119,7 +120,7 @@ bool cursor_is_enabled(const cursor_t* cursor) {
     return cursor ? cursor->enabled : false;
 }
 
-
+*/
 /* Exemplo de uso
 #include "cursor.h"
 

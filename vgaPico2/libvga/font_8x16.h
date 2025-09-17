@@ -1,10 +1,11 @@
 #ifndef __FONT_ROM_BRL4_H__
 #define __FONT_ROM_BRL4_H__   
 
-// file modified from 
-// http://ece320web.groups.et.byu.net/labs/VGATextGeneration/VGA_Terminal.html
-//
-
+char  * font_name="Font 8x16";
+const unsigned char  font_height=16;
+const unsigned char  font_width=8;
+const unsigned char  font_size=1;
+ 
 const char font_8x16[16*128]=
 {
    // code x00

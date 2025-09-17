@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-
+/*
 typedef struct
 {
     uint8_t name[32];     // Name of the font
@@ -12,5 +12,5 @@ typedef struct
     uint8_t size;    // ASCII code of the first character
     const uint8_t *data;  // Pointer to the font data array
 } font_t;
-
+*/
 #endif
