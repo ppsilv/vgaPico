@@ -30,6 +30,8 @@
 
 #include "colors.h"
 
+
+
 //vga16_text_t * vga = NULL ;
 
 // restart graphics flag
@@ -202,6 +204,37 @@ static PT_THREAD (protothread_write_screen(struct pt *pt))
 // ========================================
 // === core 0 main
 // ========================================
+void swap_buffers(char **active_buffer_ptr, unsigned char *new_buffer) {
+    *active_buffer_ptr = (char *)new_buffer;
+    
+    // Opcional: esperar a DMA terminar antes de trocar
+    // dma_channel_wait_for_finish_blocking(rgb_chan_0);
+}
+#define TXCOUNT 153600 // Total pixels/2 (since we have 2 pixels per byte)
+char vga_video_data_array0[TXCOUNT];
+char vga_video_data_array1[TXCOUNT];
+char *active_buffer = (char *)&vga_video_data_array0[0];
+static PT_THREAD (protothread_trocatela(struct pt *pt))
+{
+    PT_BEGIN(pt);
+    static bool LED_state = false ;
+
+      //Init something here
+
+
+     PT_INTERVAL_INIT() ;
+
+      while(1) {
+        PT_YIELD_INTERVAL(5000000) ;
+        swap_buffers(&active_buffer, vga_video_data_array0);
+        vga->set_vga_data_array(vga_video_data_array0);
+        PT_YIELD_INTERVAL(5000000) ;
+        swap_buffers(&active_buffer, vga_video_data_array1);
+        vga->set_vga_data_array(vga_video_data_array1);
+      } // END WHILE(1)
+  PT_END(pt);
+} // blink thread
+
 int main(){
 
     // set the clock
@@ -211,60 +244,37 @@ int main(){
     stdio_init_all() ;
   
     // Initialize the VGA screen
-    initVGA() ;
+    initVGA(  &active_buffer, TXCOUNT ) ;
 
-    vga = create_screen(MODE_640x480);
-
+    vga = create_screen( MODE_640x480, active_buffer, TXCOUNT );
+    vga->set_vga_data_array(vga_video_data_array0);
     vga->setTextColor(WHITE, BLACK);
-    
     vga->setTextSize(1);
+    // Configura o timer para chamar a callback a cada 500ms
+    add_repeating_timer_ms(250, timer_callback, NULL, &timer);
 
     vga->printString("         0         1         2         3         4         5         6         7");      
     vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
     vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3         4         5         6         7");      
-    vga->printString("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
-    vga->setTextSize(2);
-    vga->printString("         0         1         2         3");      
-    vga->printString("1234567890123456789012345678901234567890");
-    vga->printString("         0         1         2         3");      
-    vga->printString("1234567890123456789012345678901234567890");
-    vga->printString("         0         1\n");      
-    vga->printString("12345678901234567890");
-    vga->clrscr();
+    vga->printString("1234567890123456789012345678901234567890123456789012345678901234567890");
+    vga->setTextCursor(10,4);
+    vga->printString("Tela numero 1");
+    //vga->clrscr();
+    swap_buffers(&active_buffer, vga_video_data_array1);
+    vga->set_vga_data_array(vga_video_data_array1);
+
     vga->printString("Paulo da silva (c) 2025...\n");
     vga->setTextCursor(10,20);
     vga->printString("Paulo");
     vga->setTextCursor(20,20);
     vga->printString(" Silva");
 
-    // Configura o timer para chamar a callback a cada 500ms
-    add_repeating_timer_ms(250, timer_callback, NULL, &timer);
 
   // === config threads ========================
   // for core 0
 //  pt_add_thread(protothread_blinkCursor);
 
-  pt_add_thread(protothread_controlblinkCursor);
+  pt_add_thread(protothread_trocatela);
  
 
   pt_add_thread(protothread_toggle25);

@@ -1,11 +1,6 @@
 #ifndef __VGA16_TEXT_H__
 #define __VGA16_TEXT_H__    
 
-/**
- * Hunter Adams (vha3@cornell.edu)
- * modifed for text by pdsilva AKA (pgordão)
- *
- */
 #include "vga16_drv.h"
 #include "cursor.h"
 #include "colors.h"
@@ -23,9 +18,6 @@
 
 // For accessing the font library
 #define pgm_read_byte(addr) (*(const unsigned char *)(addr))
-
-
-
 
 void tft_write(unsigned char c) ;
 //static void setTextCursor(short x, short y);
@@ -54,6 +46,7 @@ typedef enum screenMode screenMode_t ;
 typedef struct vga16_text vga16_text_t ;
 
 struct vga16_text {
+    
   //void (*print_string)(vga16_text_t* self, char* str);
   void (*printString)(char* str);
   void (*setTextColor)(char c, char b);
@@ -65,12 +58,12 @@ struct vga16_text {
   void (*setTextCursorVisible)(bool v);
   void (*setTextCursorBlink)(bool b);
   void (*pchar)(char c);
-  
+  void (*set_vga_data_array)(unsigned char video_data_array[]);
 
   void * _private;
 };
 
-vga16_text_t* create_screen(screenMode_t mode);
+vga16_text_t* create_screen(screenMode_t mode,unsigned char vga_data_array[],unsigned int txcount);
 void put_cursor(unsigned char c);
 
 

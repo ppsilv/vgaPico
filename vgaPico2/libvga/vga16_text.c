@@ -15,6 +15,8 @@
 void writeStringBold(char* str);
 
 
+
+
 struct font{
     uint8_t *name;
     uint8_t width ;
@@ -54,12 +56,17 @@ typedef struct  {
 
 static vga16_text_t * vga = NULL ;
 
- 
+
+static void set_vga_data_array(unsigned char video_data_array[])
+{
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  priv->vga_data_array = &video_data_array[0];  
+} 
 
 void clrscr(){
   vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
 
-  memset(&priv->vga_data_array[0], 0, TXCOUNT) ;
+  memset(&priv->vga_data_array[0], 0, priv->txcount) ;
   // reset cursor position
   priv->cursor->x = 0 ;
   priv->cursor->y = 0 ;
@@ -68,6 +75,7 @@ void clrscr(){
 static void pchar(char c){
     tft_write(c);
 }
+
 
 void drawPixel(short x, short y, color_t color) {
     vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
@@ -103,7 +111,7 @@ void drawHLine(int x, int y, int w, color_t color) {
   }
   // draw rest of line
   int len = (w>>1)  ;
-  if (len>0 && y<480 ) memset(&vga_data_array[320*y+(x>>1)], both_color, len) ;
+  if (len>0 && y<480 ) memset(&priv->vga_data_array[320*y+(x>>1)], both_color, len) ;
  }
 
 void fillRect(short x, short y, short w, short h, color_t color) {
@@ -339,19 +347,20 @@ static void writeStringBold(char* str){
 }
 
 short readPixel(short x, short y) {
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
   int pixel = ((640 * y) + x) ;
   short color ;
   if (pixel & 1) {
-      color = vga_data_array[pixel>>1] >> 4 ;
+      color = priv->vga_data_array[pixel>>1] >> 4 ;
   }
   else {
-      color = vga_data_array[pixel>>1] & 0xf  ;
+      color = priv->vga_data_array[pixel>>1] & 0xf  ;
   }
   return color ;
 }
 
 
-vga16_text_t* create_screen(screenMode_t mode){
+vga16_text_t* create_screen(screenMode_t mode,unsigned char vga_data_array[],unsigned int txcount){
   vga = (vga16_text_t*)malloc(sizeof(vga16_text_t));
   vga16_text_private_t* priv = (vga16_text_private_t*)malloc(sizeof(vga16_text_private_t));
   
@@ -371,7 +380,7 @@ vga16_text_t* create_screen(screenMode_t mode){
   priv->font.size = font_size ;   //textsize
   priv->font.data = font_8x16 ;
   priv->tabspace = 4;
-  priv->txcount = TXCOUNT ;
+  priv->txcount = txcount ;
   priv->topmask = 0b00001111 ;
   priv->bottommask = 0b11110000 ;
   priv->vga_data_array = vga_data_array ;
@@ -398,7 +407,7 @@ vga16_text_t* create_screen(screenMode_t mode){
   vga->get_blink_interval = get_blink_interval;
   vga->set_blink_interval = set_blink_interval;
   vga->pchar = pchar;
-
+  vga->set_vga_data_array = set_vga_data_array;
 
   return vga;
 }

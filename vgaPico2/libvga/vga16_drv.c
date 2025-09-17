@@ -21,18 +21,21 @@ enum vga_pins {HSYNC=16, VSYNC, LO_GRN, HI_GRN, BLUE_PIN, RED_PIN} ;
 // Pixel color array that is DMA's to the PIO machines and
 // a pointer to the ADDRESS of this color array.
 // Note that this array is automatically initialized to all 0's (black)
-unsigned char vga_data_array[TXCOUNT];
-unsigned char vga_data_array1[TXCOUNT];
-char * address_pointer =(char *) &vga_data_array[0] ;
-char * address_pointer1 =(char *) &vga_data_array1[0] ;
+//#define TXCOUNT1 153600
+//static unsigned char vga_data_array[TXCOUNT1];
+//unsigned char vga_data_array1[TXCOUNT];
+//static char * address_pointer =(char *) &vga_data_array[0] ;
+//char * address_pointer1 =(char *) &vga_data_array1[0] ;
 
 // Screen width/height
 //#define _width 640
 //#define _height 480
 
-void initVGA() {
+void initVGA(  char **active_buffer_ptr,unsigned int totalBytes) {
         // Choose which PIO instance to use (there are two instances, each with 4 state machines)
     PIO pio = pio0;
+    //static char *address_pointer;
+    //address_pointer = (char *)vga_data_array;
 
     // The program name comes from the .program part of the pio file
     // and is of the form <program name_program>
@@ -81,8 +84,8 @@ void initVGA() {
         rgb_chan_0,                 // Channel to be configured
         &c0,                        // The configuration we just created
         &pio->txf[rgb_sm],          // write address (RGB PIO TX FIFO)
-        &vga_data_array,            // The initial read address (pixel color array)
-        TXCOUNT,                    // Number of transfers; in this case each is 1 byte.
+        *active_buffer_ptr,             // The initial read address (pixel color array)
+        totalBytes,                 // Number of transfers; in this case each is 1 byte.
         false                       // Don't start immediately.
     );
 
@@ -97,7 +100,7 @@ void initVGA() {
         rgb_chan_1,                         // Channel to be configured
         &c1,                                // The configuration we just created
         &dma_hw->ch[rgb_chan_0].read_addr,  // Write address (channel 0 read address)
-        &address_pointer,                   // Read address (POINTER TO AN ADDRESS)
+        active_buffer_ptr,                    // Read address (POINTER TO AN ADDRESS)
         1,                                  // Number of transfers, in this case each is 4 byte
         false                               // Don't start immediately.
     );
@@ -125,14 +128,14 @@ void initVGA() {
     // of that array.
     dma_start_channel_mask((1u << rgb_chan_0)) ;
 }
-
+/*
 char* get_vga_buffer_pointer(){
   return &vga_data_array[0] ;
 }       
 char* get_vga_buffer_pointer1(){
   return &vga_data_array1[0] ;
 }       
-
+*/
 //int get_with(){
 //  return _width ;
 //}

@@ -29,13 +29,13 @@
 
 
 // VGA primitives - usable in main
-void initVGA(void) ;
+void initVGA(  char **active_buffer_ptr,unsigned int totalBytes) ;
 char* get_vga_buffer_pointer(void);
-int get_width();
-int get_height();
+//int get_width();
+//int get_height();
 
 
 // Length of the pixel array, and number of DMA transfers
-#define TXCOUNT 153600 // Total pixels/2 (since we have 2 pixels per byte)
-extern unsigned char vga_data_array[TXCOUNT];
+//#define TXCOUNT 153600 // Total pixels/2 (since we have 2 pixels per byte)
+//extern unsigned char vga_data_array[TXCOUNT];
 #endif
