@@ -152,6 +152,10 @@ int main(){
     setTextSize(2);
     printString("         0         1         2         3");      
     printString("1234567890123456789012345678901234567890");
+    printString("         0         1         2         3");      
+    printString("1234567890123456789012345678901234567890");
+    printString("         0         1\n");      
+    printString("12345678901234567890");
 
 
     //printf("video assumes cpu clock=%d MHz", rgb_vid_freq);
