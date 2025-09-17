@@ -39,6 +39,8 @@ int bkgnd_color = 0 ;
 
 int msprintf(char *str, const char *format, ...);
 
+vga16_text_t *vga = NULL ;
+
 // ==================================================
 // === toggle25 thread on core 0
 // ==================================================
@@ -65,6 +67,55 @@ static PT_THREAD (protothread_toggle25(struct pt *pt))
         gpio_put(25, LED_state);
         //
         // NEVER exit while
+      } // END WHILE(1)
+  PT_END(pt);
+} // blink thread
+static PT_THREAD (protothread_blinkCursor(struct pt *pt))
+{
+    PT_BEGIN(pt);
+    static bool LED_state = false ;
+
+      //Init something here
+
+
+     PT_INTERVAL_INIT() ;
+
+      while(1) {
+        put_cursor(1);
+        PT_YIELD_INTERVAL(500000) ;
+        put_cursor(0);
+        PT_YIELD_INTERVAL(500000) ;
+      } // END WHILE(1)
+  PT_END(pt);
+} // blink thread
+
+static PT_THREAD (protothread_controlblinkCursor(struct pt *pt))
+{
+    PT_BEGIN(pt);
+    static int control=0;
+      //Init something here
+   // vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+
+     PT_INTERVAL_INIT() ;
+
+      while(1) {
+        control++;
+        PT_YIELD_INTERVAL(5000000) ;
+        switch(control){
+          case 1:
+     //           priv->cursor->blink=false;
+                break;
+          case 2:
+     //           priv->cursor->visible=false;
+                break;
+          case 3:                      
+     //           priv->cursor->blink=true;
+                break;
+          case 4:
+     //           priv->cursor->visible=true;
+                control=0;
+                break;
+        }
       } // END WHILE(1)
   PT_END(pt);
 } // blink thread
@@ -111,7 +162,6 @@ static PT_THREAD (protothread_write_screen(struct pt *pt))
 // === core 0 main
 // ========================================
 int main(){
-    vga16_text_t *vga = NULL ;
 
     // set the clock
     set_sys_clock_khz(150000, true);
@@ -164,12 +214,12 @@ int main(){
     vga->setTextCursor(10,20);
     vga->printString("Paulo");
     vga->setTextCursor(20,20);
-    vga->printString("Silva");
+    vga->printString(" Silva");
 
 
   // === config threads ========================
   // for core 0
- // pt_add_thread(protothread_write_screen);
+  pt_add_thread(protothread_blinkCursor);
 
   pt_add_thread(protothread_toggle25);
 

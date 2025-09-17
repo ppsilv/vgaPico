@@ -64,7 +64,7 @@ struct vga16_text {
 };
 
 vga16_text_t* create_screen(screenMode_t mode);
-
+void put_cursor(unsigned char c);
 
 
 
