@@ -28,7 +28,7 @@
 
 
 void tft_write(unsigned char c) ;
-static void setTextCursor(short x, short y);
+//static void setTextCursor(short x, short y);
 //static void setTextColor(char c);
 //static void setTextColor(char c, char bg);
 //static void setTextSize(unsigned char s);
@@ -58,6 +58,7 @@ struct vga16_text {
   void (*printString)(char* str);
   void (*setTextColor)(char c, char b);
   void (*setTextSize)(unsigned char s);
+  void (*setTextCursor)(short x, short y);
   void (*clrscr)(void);
   void * _private;
 };

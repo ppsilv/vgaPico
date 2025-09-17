@@ -159,28 +159,14 @@ int main(){
     vga->printString("1234567890123456789012345678901234567890");
     vga->printString("         0         1\n");      
     vga->printString("12345678901234567890");
+    vga->clrscr();
+    vga->printString("Paulo da silva (c) 2025...\n");
+    vga->setTextCursor(10,20);
+    vga->printString("Paulo");
+    vga->setTextCursor(20,20);
+    vga->printString("Silva");
 
 
-    //printf("video assumes cpu clock=%d MHz", rgb_vid_freq);
-/*
-    vga = vga16_text_create(1);
-
-    vga16_text_clrscr(vga);
-
-    vga16_text_set_text_color(vga, WHITE);
-    vga16_text_set_text_size(vga, 1); 
-    vga16_text_set_text_cursor(vga, 0, 0);
-    //                            0        1         2         3         4         5         6         7      
-    vga16_text_print_string(vga, "12345678901234567890123456789012345678901234567890123456");// 345678901234567890");
-    vga16_text_set_text_cursor(vga, 10, 15);
-    vga16_text_print_string(vga, "VGA 640x480 16 cores 0-3");
-    vga16_text_set_text_cursor(vga, 10, 30 );
-    vga16_text_print_string(vga, "Protothreads RP2040/2350 v1.4");
-    vga16_text_set_text_cursor(vga, 10, 45 );
-    vga16_text_print_string(vga, "P. Silva 2024");
-    vga16_text_set_text_cursor(vga, 10, 60 );
-    vga16_text_print_string(vga, "www.github.com/pdsilva/vgaPico");
-*/
   // === config threads ========================
   // for core 0
  // pt_add_thread(protothread_write_screen);

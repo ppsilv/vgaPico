@@ -64,7 +64,7 @@ static vga16_text_t * vga = NULL ;
 void clrscr(){
   vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
 
-  memset(&vga_data_array[0], 0, TXCOUNT) ;
+  memset(&priv->vga_data_array[0], 0, TXCOUNT) ;
   // reset cursor position
   priv->cursor.x = 0 ;
   priv->cursor.y = 0 ;
@@ -80,10 +80,10 @@ void drawPixel(short x, short y, color_t color) {
 
     int pixel = ((priv->width * y) + x) ;
     if (pixel & 1) {
-        vga_data_array[pixel>>1] = (vga_data_array[pixel>>1] & TOPMASK) | (color << 4) ;
+        priv->vga_data_array[pixel>>1] = (priv->vga_data_array[pixel>>1] & TOPMASK) | (color << 4) ;
     }
     else {
-        vga_data_array[pixel>>1] = (vga_data_array[pixel>>1] & BOTTOMMASK) | (color) ;
+        priv->vga_data_array[pixel>>1] = (priv->vga_data_array[pixel>>1] & BOTTOMMASK) | (color) ;
     }
 }
 
@@ -211,20 +211,25 @@ void drawChar(unsigned char c, color_t color, color_t bg, unsigned char size) {
     drawChar2( priv->cursor.x, priv->cursor.y, c, color, bg, size);
 }
 
-//unsigned short get_cursor_y(){
-//  return cursor_y;
-//}
-//unsigned short get_cursor_x()
-//{
-//  return cursor_x;
-//}
-//unsigned short get_textsize()
-//{
-//  return textsize;
-//} 
 
 static void setTextCursor(short x, short y) {
   vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  if((x >= priv->width) || (y >= priv->height)) 
+    return;
+  if(x*priv->font.width >= priv->width) {
+    x = x*priv->font.width / priv->font.width;
+    if( y < priv->height )
+      y = y *priv->font.height;
+    else
+      y = 0 ;
+  }else{
+    x = x*priv->font.width;
+    if( y < priv->height )
+      y = y *priv->font.height;
+    else
+      y = 0 ;
+  }
+
   priv->cursor.x = x;
   priv->cursor.y = y;
 }
@@ -350,6 +355,7 @@ short readPixel(short x, short y) {
   vga->printString = printString;
   vga->setTextColor = setTextColor;
   vga->setTextSize = setTextSize;
+  vga->setTextCursor = setTextCursor;
   vga->clrscr = clrscr;
 
 
