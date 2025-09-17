@@ -283,7 +283,23 @@ static void setTextSize(unsigned char s) {
   vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
   priv->font.size = (s > 0) ? s : 1;
 }
-
+void set_blink_interval(uint16_t interval)
+{
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  priv->cursor->blink_interval = interval;
+}
+static uint16_t get_blink_interval(void){
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  return priv->cursor->blink_interval;
+}
+static void setTextCursorVisible(bool v) {
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  priv->cursor->visible = v;
+}
+static void setTextCursorBlink(bool b) {
+  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
+  priv->cursor->blink = b;
+}
 //static void setTextColor(char c) {
 //  vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
 //  priv->textcolor = priv->textbgcolor = c;
@@ -334,7 +350,8 @@ short readPixel(short x, short y) {
   return color ;
 }
 
- vga16_text_t* create_screen(screenMode_t mode){
+
+vga16_text_t* create_screen(screenMode_t mode){
   vga = (vga16_text_t*)malloc(sizeof(vga16_text_t));
   vga16_text_private_t* priv = (vga16_text_private_t*)malloc(sizeof(vga16_text_private_t));
   
@@ -359,7 +376,6 @@ short readPixel(short x, short y) {
   priv->bottommask = 0b11110000 ;
   priv->vga_data_array = vga_data_array ;
 
-
   if( mode == MODE_320x240 ){    
     priv->width = 320;
     priv->height= 240;
@@ -377,6 +393,11 @@ short readPixel(short x, short y) {
   vga->setTextSize = setTextSize;
   vga->setTextCursor = setTextCursor;
   vga->clrscr = clrscr;
+  vga->setTextCursorVisible = setTextCursorVisible;
+  vga->setTextCursorBlink = setTextCursorBlink;
+  vga->get_blink_interval = get_blink_interval;
+  vga->set_blink_interval = set_blink_interval;
+  vga->pchar = pchar;
 
 
   return vga;

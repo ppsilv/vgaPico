@@ -32,7 +32,7 @@ struct cursor{
     uint16_t (*get_x)();
     uint16_t (*get_y)();
     bool (*is_visible)();
-
+    uint16_t (*get_blink_interval)(void);
 };
 typedef struct cursor cursor_t;
 static cursor_t *default_cursor = NULL;//{0,0,true,true,500,CURSOR_BAR} ;

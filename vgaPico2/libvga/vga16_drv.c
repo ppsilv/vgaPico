@@ -22,11 +22,13 @@ enum vga_pins {HSYNC=16, VSYNC, LO_GRN, HI_GRN, BLUE_PIN, RED_PIN} ;
 // a pointer to the ADDRESS of this color array.
 // Note that this array is automatically initialized to all 0's (black)
 unsigned char vga_data_array[TXCOUNT];
+unsigned char vga_data_array1[TXCOUNT];
 char * address_pointer =(char *) &vga_data_array[0] ;
+char * address_pointer1 =(char *) &vga_data_array1[0] ;
 
 // Screen width/height
-#define _width 640
-#define _height 480
+//#define _width 640
+//#define _height 480
 
 void initVGA() {
         // Choose which PIO instance to use (there are two instances, each with 4 state machines)
@@ -127,12 +129,15 @@ void initVGA() {
 char* get_vga_buffer_pointer(){
   return &vga_data_array[0] ;
 }       
+char* get_vga_buffer_pointer1(){
+  return &vga_data_array1[0] ;
+}       
 
-int get_with(){
-  return _width ;
-}
-int get_height(){
-  return _height ;
-}
+//int get_with(){
+//  return _width ;
+//}
+//int get_height(){
+//  return _height ;
+//}
 
     

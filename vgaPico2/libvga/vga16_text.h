@@ -60,6 +60,13 @@ struct vga16_text {
   void (*setTextSize)(unsigned char s);
   void (*setTextCursor)(short x, short y);
   void (*clrscr)(void);
+  uint16_t (*get_blink_interval)(void);
+  void (*set_blink_interval)(uint16_t interval);
+  void (*setTextCursorVisible)(bool v);
+  void (*setTextCursorBlink)(bool b);
+  void (*pchar)(char c);
+  
+
   void * _private;
 };
 

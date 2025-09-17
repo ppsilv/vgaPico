@@ -41,6 +41,32 @@ int msprintf(char *str, const char *format, ...);
 
 vga16_text_t *vga = NULL ;
 
+repeating_timer_t timer;
+static int last_toggle_time = 1;
+
+static bool timer_callback(repeating_timer_t *rt)
+{
+    if(last_toggle_time == 1){
+        put_cursor(1);
+        last_toggle_time = 0;
+    }
+    else{
+        put_cursor(0);
+        last_toggle_time = 1;
+    }
+  return true;
+}
+static void create_timer()
+{
+    cancel_repeating_timer(&timer);
+    int16_t tempo = vga->get_blink_interval();
+    add_repeating_timer_ms(tempo, timer_callback, NULL, &timer);
+}
+static void pwriteStr(char *str) {
+    while(*str) {
+      //  vga16_text_pchar(vga,*str++);
+    } 
+}
 // ==================================================
 // === toggle25 thread on core 0
 // ==================================================
@@ -92,7 +118,7 @@ static PT_THREAD (protothread_blinkCursor(struct pt *pt))
 static PT_THREAD (protothread_controlblinkCursor(struct pt *pt))
 {
     PT_BEGIN(pt);
-    static int control=0;
+    static int control=4;
       //Init something here
    // vga16_text_private_t* priv = (vga16_text_private_t*)vga->_private;
 
@@ -103,18 +129,39 @@ static PT_THREAD (protothread_controlblinkCursor(struct pt *pt))
         PT_YIELD_INTERVAL(5000000) ;
         switch(control){
           case 1:
-     //           priv->cursor->blink=false;
-                break;
+              vga->pchar('A');
+              vga->setTextCursorBlink(false);
+              break;
           case 2:
-     //           priv->cursor->visible=false;
-                break;
+              vga->setTextCursorVisible(false);
+              break;
           case 3:                      
-     //           priv->cursor->blink=true;
-                break;
+              vga->setTextCursorBlink(true);
+              break;
           case 4:
-     //           priv->cursor->visible=true;
-                control=0;
-                break;
+              vga->setTextCursorVisible(true);
+              break;
+          case 5:
+              vga->set_blink_interval(75);
+              vga->pchar('b');
+              create_timer();              
+              break;
+          case 6:
+              vga->set_blink_interval(150);
+              vga->pchar('c');
+              create_timer();              
+              break;
+          case 7:
+              vga->set_blink_interval(450);
+              vga->pchar('d');
+              create_timer();              
+              break;
+          case 8:
+              vga->set_blink_interval(1000);
+              vga->pchar('e');
+              create_timer();              
+              control=0;
+              break;
         }
       } // END WHILE(1)
   PT_END(pt);
@@ -123,12 +170,6 @@ static PT_THREAD (protothread_controlblinkCursor(struct pt *pt))
  volatile   int cursorx=0;
  volatile   int cursory=0;
 
-
-static void pwriteStr(char *str) {
-    while(*str) {
-      //  vga16_text_pchar(vga,*str++);
-    } 
-}
 /*
 static PT_THREAD (protothread_write_screen(struct pt *pt))
 {
@@ -216,10 +257,15 @@ int main(){
     vga->setTextCursor(20,20);
     vga->printString(" Silva");
 
+    // Configura o timer para chamar a callback a cada 500ms
+    add_repeating_timer_ms(250, timer_callback, NULL, &timer);
 
   // === config threads ========================
   // for core 0
-  pt_add_thread(protothread_blinkCursor);
+//  pt_add_thread(protothread_blinkCursor);
+
+  pt_add_thread(protothread_controlblinkCursor);
+ 
 
   pt_add_thread(protothread_toggle25);
 
